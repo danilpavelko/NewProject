@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdint.h>
+
+
+void printfPlusNumTime(char sing, int num)
+{
+	for (int i = 0; i < num; i++)
+	{
+		printf("%c", sing);
+	}
+	printf("\n");
+};
+
+void IntToSymbol (char sign)
+{
+	printf("IntToSymbo:  %c \n", sign);
+}
+
+void SymboltoInt(char symbol) 
+{
+	printf("SymboltoInt: %d \n", symbol);
+};
+
+void main() 
+{
+
+	int num;
+
+	num = 10;
+
+	printfPlusNumTime('+', num);
+	IntToSymbol(48);
+	SymboltoInt('D');
+}
